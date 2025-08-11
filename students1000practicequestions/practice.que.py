@@ -2182,11 +2182,1553 @@
 
 
 # 228. Write a Python program to generate a list of all prime numbers between 1 and 50.
-primes = []
-for num in range(2, 51):
-    if all(num % i != 0 for i in range(2, int(num**0.5) + 1)):
-        primes.append(num)
-print(primes)
+# primes = []
+# for num in range(2, 51):
+#     if all(num % i != 0 for i in range(2, int(num**0.5) + 1)):
+#         primes.append(num)
+# print(primes)
+
+
+
+# 229. Write a Python program to remove a newline in Python. 
+# text = "Hello World\n"
+# print(text.rstrip())
+
+
+
+# 230.Write a Python program to check whether a string contains all letters of the alphabet.
+# import string
+
+# def is_pangram(s):
+#     return set(string.ascii_lowercase) <= set(s.lower())
+
+# print(is_pangram("the quick brown fox jumps over the lazy dog"))
+
+
+
+# 231. Write a Python program to print yesterday, today, and tomorrow.
+# import datetime
+# today = datetime.date.today()
+# yesterday = today - datetime.timedelta(days=1)
+# tomorrow = today - datetime.timedelta(days=1)
+
+# print("yesterday:", yesterday)
+# print("today:", today)
+# print("tomorrow:", tomorrow)
+
+
+
+# 232. Write a Python program to get the name of the operating system.
+# import os
+# print(os.name)
+
+
+
+# 233. Write a Python program to count occurrences of a substring in a string.
+# text = "hello world, hello python"
+# print(text.count("hello"))
+
+
+
+# 234. Write a Python program to get the current username.
+# import getpass
+# print(getpass.getuser())
+
+
+
+# 235. Write a Python program to extract the file extension from a filename.
+# filename = "example.txt"
+# print("extension:", filename.split(".")[-1])
+
+
+
+# 236.Which of these will raise an error?
+# mylist = [1, 2, 3]
+# print(mylist[3])
+
+
+# 237.Which operator is used to check identity?
+# a = b = [1, 2]
+# print(a is b)
+
+
+
+# 238. Convert a string to a list of characters.
+# s = "hello"
+# char_list = list(s)
+# print(char_list)
+
+
+
+# 239. Replace all occurrences of a specific word in a string.
+# text = "one one was a race horse"
+# new_text = text.replace("one", "two")
+# print(new_text)
+
+
+
+# 240. Reverse each word in a string.
+# sentence = "Hello World"
+# reversed_words = ' '.join(word[::-1] for word in sentence.split())
+# print(reversed_words)
+
+
+
+# 241. Count vowels in a string.
+# vowels = "aeiouAEIOU"
+# text = "PyNative is a great resource"
+# count = sum(1 for ch in text if ch in vowels)
+# print("Vowel count:", count)
+
+
+
+# 242. Write a function to return even numbers from a list.
+# def get_even(nums):
+    # return [n for n in nums if n % 2 == 0]
+
+# print(get_even([1, 2, 3, 4, 5, 6]))
+
+
+
+# 243. Swap first and last elements of a list.
+# lst = [10, 20, 30, 40]
+# lst[0], lst[-1] = lst[-1], lst[0]
+# print(lst)
+
+
+
+# 241. Write a function to return the largest of three numbers.
+# def largest(a, b, c):
+#     return max(a, b, c)
+
+# print(largest(10, 25, 15))
+
+
+
+# 242. Remove duplicate characters from a string.
+# s = "pynative"
+# result = ""
+# for char in s:
+#     if char not in result:
+#         result += char
+# print(result)
+
+
+
+# 243. Calculate factorial using a loop.
+# n = 5
+# fact = 1
+# for i in range(1, n+1):
+#     fact *= i
+# print(fact)
+
+
+
+# 244. Write a Python program to count digits in a number.
+# num = 123456
+# count = 0
+# while num:
+#     num //= 10
+#     count += 1
+# print("Digits:", count)
+
+
+
+# 245. Create a list of the first letters of every word in a string.
+# text = "Python is powerful"
+# first_letters = [word[0] for word in text.split()]
+# print(first_letters)
+
+
+
+# 246. Find the second smallest number in a list.
+# nums = [5, 1, 3, 2, 4]
+# nums.sort()
+# print(nums[1])
+
+
+
+# 247. Convert a list of multiple integers into a single integer.
+# nums = [1, 2, 3]
+# result = int("".join(map(str, nums)))
+# print(result)
+
+
+
+# 248. Count the number of occurrence of a specific character in a string.
+# s = "hello world"
+# print(s.count('l'))
+
+
+
+# 249. Write a Python program to get the ASCII value of a character.
+# char = 'A'
+# print("ASCII value of", char, "is", ord(char))
+
+
+
+# 250. What will this return?
+# x = "Python"
+# print(x[-1])
+
+
+
+# 251. What is the result of this slice?
+# text = "PyNative"
+# print(text[2:5])
+
+
+
+# 252. Count the number of occurrences of a specific character in a string.
+# s = "PyNative"
+# print(s.count('a'))
+
+
+
+# 253. Reverse a list using slicing.
+# my_list = [1, 2, 3, 4]
+# print(my_list[::-1])
+
+
+
+# 254. How to convert a string into a list of words?
+# s = "Python is fun"
+# print(s.split())
+
+
+
+# 255. How to check if all characters in a string are digits?
+# num = "12345"
+# print(num.isdigit())
+
+
+
+# 256. What is the output?
+# s = "Pynative"
+# print(s.upper())
+
+
+
+# 257. What is the output of:
+# x =[1, 2]
+# y = [3, 4]
+# print(x + y)
+
+
+
+# 258. Swap two variables without a third variable.
+# a = 5
+# b = 10
+# a, b = b, a
+# print(a, b)
+
+
+
+# 259. Write a Python program to check if a number is positive, negative or zero.
+# num = float(input("Enter a number: "))
+# if num > 0:
+#     print("number is positive")
+# elif num == 0:
+#     print("zero")
+# else:
+#     print("number is negative") 
+
+
+
+# 260. How do you create a list of even numbers from 0 to 10 in Python?
+# evens = [i for i in range(11) if i % 2 == 0]
+# print(evens)
+
+
+
+# 261. Write a Python program to convert a list of integers to a single integer.
+# nums = [1, 2, 3]
+# result = int("".join(map(str, nums)))
+# print(result)
+
+
+
+# 262. Replace all spaces in a string with underscores.
+# text = "hello world python"
+# print(text.replace(" ", "_"))
+
+
+
+# 263. Merge two dictionaries.
+# a = {'x': 1}
+# b = {'y': 2}
+# merged = {**a, **b}
+# print(merged)
+
+
+
+# 264. Get the square root of a number using math module.
+# import math 
+# print(math.sqrt(49))
+
+
+
+# 265. Write a program to get the ASCII value of a character.
+# char = 'A'
+# print("the ASCII value of", char, "is", ord(char))
+
+
+
+# 266. What will the following slice do?
+# x = [1, 2, 3, 4, 5]
+# print(x[1:-1])
+
+
+
+# 267. Write a Python program to print the square and cube of a number.
+# num = 4
+# print("Square:", num ** 2)
+# print("Cube:", num ** 3)
+
+
+
+# 268. Write a Python program to print all even numbers from 1 to 10.
+# for i in range(1, 11):
+#     if i % 2 == 0:
+#         print(i, end=' ')
+
+
+
+# 269. Write a Python program to count the number of vowels in a string.
+# text = "PyNative"
+# vowels = "aeiouAEIOU"
+# count = 0
+# for char in text:
+#     if char in vowels:
+#         count += 1
+# print("vowel count:", count)        
+
+
+
+# 270. Create a dictionary from two lists.
+# keys = ['name', 'age']
+# values = ['Pradip', 25]
+# my_dict = dict(zip(keys, values))
+# print(my_dict)
+
+
+
+# 271. Check if a list is empty.
+# my_list = []
+# if not my_list:
+#     print("Empty List")
+
+
+
+# 272. Remove all spaces from a string.
+# text = "Hello World"
+# print(text.replace(" ", ""))
+
+
+
+# 273. Write a Python program to reverse a list.
+# my_list = [1, 2, 3, 4]
+# my_list.reverse()
+# print(my_list)
+
+
+
+# 274. Write a Python program to get the file extension from a filename.
+# filename = "example.txt"
+# extension = filename.split('.')[-1]
+# print("Extension:", extension)
+
+
+
+# 275. Write a Python program to find the maximum and minimum values in a list.
+# nums = [10, 20, 5, 8, 35]
+# print("Max:", max(nums))
+# print("Min:", min(nums))
+
+
+
+# 276.Write a Python program to check if a given key exists in a dictionary.
+# sample_dict = {'a': 1, 'b': 2}
+# key = 'b'
+# print(key in sample_dict)
+
+
+
+# 277. Write a Python program to count the number of characters in a string.
+# text = "hello world"
+# print("Character count:", len(text))
+
+
+
+# 278. How to convert a list of strings to a single string?
+# words = ['Python', 'is', 'awesome']
+# result = ' '.join(words)
+# print(result)
+
+
+
+# 279. Write a Python program to check if a string starts with a given prefix.
+# text = "GeeksforGeeks"
+# print(text.startswith("Geeks"))
+
+
+
+# 280. What does the following list slicing return?
+# x = [10, 20, 30, 40, 50]
+# print(x[1:4])
+
+
+
+# 281. Write a Python program to convert a string to lowercase.
+# text = "GFG IS COOL"
+# print(text.lower())
+
+
+
+# 282. How to copy a list in Python?
+# a = [1, 2, 3]
+# b = a.copy()
+# print(b)
+
+
+
+# 283. Write a Python program to repeat a string 3 times.
+# s = "Hi"
+# print(s * 3)
+
+
+
+# 284. Write a Python program to remove duplicate elements from a list.
+# nums = [1, 2, 2, 3, 4, 4]
+# unique = list(set(nums))
+# print(unique)
+
+
+
+# 285. Write a Python program to check if a number is a multiple of 3 or 5.
+# num = 15
+# if num % 3 == 0 or num % 5 == 0:
+#     print("Yes")
+# else:
+#     print("No")
+
+
+
+# 286. Write a Python program to check if a list is empty or not.
+# a = []
+# if not a:
+#     print("List is empty")
+# else:
+#     print("List is not empty")
+
+
+
+# 287. Write a Python program to find the common elements between two lists.
+# a = [1, 2, 3, 4]
+# b = [3, 4, 5, 6]
+# common = list(set(a) & set(b))
+# print(common)
+
+
+
+# 288. Write a Python program to remove all whitespaces from a string.
+# s = " G e e k s "
+# clean = s.replace(" ", "")
+# print(clean)
+
+
+
+# 289. Write a Python program to find the sum of the first n natural numbers.
+# n = 5
+# total = n * (n + 1) // 2
+# print("Sum of first", n, "natural numbers is:", total)
+
+
+
+# 290. Write a Python program to find the second largest number in a list.
+# nums = [10, 20, 30, 40]
+# nums.sort()
+# print("Second largest:", nums[-2])
+
+
+
+# 291. Write a Python program to print all even numbers from a list.
+# num = [1, 4, 5, 6, 7, 8]
+# for n in num:
+#     if n % 2 == 0:
+#      print("number is even")
+#     else:
+#        print("number is odd",)
+
+
+
+# 292. Write a Python program to print only the first 3 characters of a string.
+# s = "PyNative"
+# first_three = s[slice(0, 3)]
+# print("First 3 characters:", first_three)
+
+
+
+# 293. Write a Python program to convert a string to title case.
+# text = "python programming is fun"
+# print(text.title())
+
+
+
+# 294. Write a Python program to convert a string to a list of characters.
+# s = "Hello"
+# char_list = list(s)
+# print(char_list)
+
+
+
+# 295. Write a Python program to convert a list of characters into a string.
+# chars = ['P', 'y', 't', 'h', 'o', 'n']
+# s = ''.join(chars)
+# print(s)
+
+
+
+# 296. Write a Python program to check if a number is a multiple of 3 or 5.
+# n = 15
+# if n % 3 == 0 or n % 5 == 0:
+#     print("Yes")
+# else:
+#     print("No")
+
+
+
+# 297. Write a Python program to reverse a string using slicing.
+# s = "geeksforgeeks"
+# slice_str = s[::-1]
+# print(slice_str)
+
+
+
+# 298. Write a Python program to remove all whitespaces from a string.
+# s = " G e e k s  f o r  G e e k s "
+# no_space = s.replace(" ", "")
+# print(no_space)
+
+
+
+# 299. Write a Python program to print numbers from 1 to 10 using a while loop.
+# i = 1
+# while i <= 10:
+#     print(i)
+#     i += 1
+
+
+
+# 300. Write a Python program to count the number of vowels in a string.
+# s = "geeksforgeeks"
+# vowels = "aeiouAEIOU"
+# count = sum(1 for ch in s if ch in vowels)
+# print("Vowel count:", count)
+
+
+
+# 301. Write a Python program to swap two variables without using a third variable.
+# a = 5
+# b = 10
+# a, b = b, a
+# print("a:", a, "b:", b)
+
+
+
+# 302. Write a Python program to find the second largest number in a list.
+# numbers = [10, 20, 4, 45, 99]
+# numbers.sort()
+# second_largest = numbers[-2]
+# print("Second largest number is:", second_largest)
+
+
+
+# 303. Write a Python program to check if a number is a Harshad number.
+# num = 18
+# digit_sum = sum(int(digit) for digit in str(num))
+# if num % digit_sum == 0:
+#     print(num, "is a harshad number")
+# else:
+#     print(num, "is not a harshad number")
+
+
+
+# 304. Write a Python program to find the sum of squares of the first n natural numbers.
+# n = 5
+# total = sum(i**2 for i in range(1, n+1))
+# print("sum of squares:", total)
+
+
+
+# 305.Write a Python program to check if two strings are anagrams.
+# str1 = "listen"
+# str2 = "silent"
+# if sorted(str1) == sorted(str2):
+#     print("anagrams")
+# else:
+#     print("not anagrams")
+
+
+
+# 306. Write a Python program to reverse a number.
+# num = 12345
+# reverse = int(str(num)[::-1])
+# print("Reversed number:", reverse)
+
+
+
+# 307. Find the largest of three numbers without using built-in max()
+# a, b, c = 12, 25, 18
+# largest = a 
+# if b > largest:
+#     largest = b
+# if c > largest:
+#     largest = c
+# print("Largest number:", largest)    
+
+
+
+# 308. Find the largest number in a list without using max()
+# numbers = [12, 45, 78, 34, 89, 23]
+# largest = numbers[0]
+# for num in numbers:
+#     if num > largest:
+#         largest = num
+# print("Largest number is :", largest)
+
+
+
+# 309. Count how many times a digit appears in a number
+# num = 1223334444
+# digit_to_count = 4
+# count = str(num).count(str(digit_to_count))
+
+# print(f"Digit {digit_to_count} appears {count} times.")
+
+
+
+# 310. Find the largest number in a list without using max()
+# numbers = [12, 45, 78, 34, 89, 23]
+# largest = numbers[0]
+# for num in numbers:
+#     if num > largest:
+#         largest = num
+# print("Largest number is:", largest)
+
+
+
+# 311. Reverse a number without using slicing
+# num = 4567
+# rev_num = 0
+# while num > 0:
+#     digit = num % 10
+#     rev_num = rev_num * 10 + digit
+#     num //= 10
+# print("Reversed number:", rev_num)
+
+
+
+# 312. Calculate the sum of digits of a number
+# num = 9875
+# sum_digits = 0
+# for digit in str(num):
+#     sum_digits += int(digit)
+# print("Sum of digits:", sum_digits)
+
+
+
+# 313. Find the factorial of a number using recursion
+# def factorial(n):
+#     if n == 0 or n ==1:
+#         return 1
+#     return n * factorial(n-1)
+# print("Factorial of 5:", factorial(5))
+
+
+
+# 314. Calculate the square root of a number without using math.sqrt()
+# num = 16
+# sqrt_num = num ** 0.5
+# print("square root of", num, "is", sqrt_num)
+
+
+# 315. Check if a number is prime
+# num = 29
+# if num %2 == 0 :
+#     print("num is not prime")
+# else:
+#     print("num is prime")
+
+
+
+# 316. Count the total number of digits in a number
+# num = 75869
+# count = 0
+# while num > 0:
+#     count +=1
+#     num //= 10
+# print("Total digits:", count)
+
+
+
+# 317. Calculate the sum of the first n natural numbers
+# n = 10
+# total = n * (n + 1) // 2
+# print("sum of first", n, "natural numbers is:", total)
+
+
+
+# 318. Check if a number is palindrome
+# num = 121
+# if str(num) == str(num)[::-1]:
+#     print(num, "is a palindrome")
+# else:
+#     print(num, "is not a paqlindrome")
+
+
+
+# 319. Calculate the cube of each number in a list
+# numbers = [2, 3, 4, 5]
+# cubes = [n**3 for n in numbers]
+# print(cubes)
+
+
+
+# 320. Find the largest among three numbers
+# a, b, c = 12, 25, 7
+# largest = max(a, b, c)
+# print(largest)
+
+
+
+# 321. Calculate the area of a circle
+# radius = 7 
+# area = 3.14159 * radius * radius
+# print(area)
+
+
+
+# 322. Count the number of vowels in a string
+# text = "Hello World"
+# vowels = "aeiouAEIOU"
+# count = sum(1 for ch in text if ch in vowels)
+# print("Number of vowels:", count)
+
+
+
+# 323. Merge two dictionaries
+# dict1 = {"a": 1, "b": 2}
+# dict2 = {"c": 3, "d": 4}
+# merged = {**dict1, **dict2}
+# print("Merged dictionary:", merged)
+
+
+
+# 324. Reverse a list without using slicing
+# numbers = [1, 2, 3, 4, 5]
+# numbers.reverse()
+# print("Reversed list:", numbers)
+
+
+
+# 325. Check if a number is even or odd
+# num = 7
+# if num % 2 == 0:
+#     print("Even")
+# else:
+#     print("Odd")
+
+
+
+# 326. Calculate the sum of digits of a number
+# num = 1234
+# digit_sum = sum(int(d) for d in str(num))
+# print("Sum of digits:", digit_sum)
+
+
+
+# 327. Convert a string to lowercase
+# text = "HELLO WORLD"
+# lower_text = text.lower()
+# print(lower_text)
+
+
+
+# 328. Check if a year is a leap year
+# year = 2024
+# if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+#     print("Leap Year")
+# else:
+#     print("Not a Leap Year")
+
+
+
+# 329. Remove duplicates from a list
+# numbers = [1, 2, 2, 3, 4, 4, 5]
+# unique = list(set(numbers))
+# print(unique)
+
+
+
+# 330. Convert a list of integers to a single concatenated string
+# numbers = [1, 2, 3, 4]
+# result = ''.join(map(str, numbers))
+# print(result)
+
+
+
+# 331. Count how many times a word appears in a sentence
+# sentence = "the quick brown fox jumps over the lazy dog the the"
+# word = "the"
+# count = sentence.split().count(word)
+# print(count)
+
+
+
+# 332. Calculate the area of a triangle
+# base = 5
+# height = 8
+# area = 0.5 * base * height
+# print(area)
+
+
+
+# 333. Reverse a given string
+# text = "Python"
+# reversed_text = text[::-1]
+# print("Reversed string:", reversed_text)
+
+
+
+# 334. Check if a number is positive, negative, or zero
+# num = int(input("Enter a number:"))
+# if num > 0:
+#     print("positive")
+# elif num < 0:
+#     print("negative")
+# else:
+#     print("zero")
+
+
+
+# 335. Get the length of a list without using len()
+# numbers = [1, 2, 3, 4]
+# count = 0
+# for _ in numbers:
+#     count += 1
+# print("Length of list:", count)
+
+
+
+# 336. Find the smallest element in a list
+# numbers = [5, 2, 9, 1, 7]
+# smallest = min(numbers)
+# print("Smallest element:", smallest)
+
+
+
+# 337. Print numbers from 1 to 10 using a while loop
+# i = 1
+# while i <= 10:
+#     print(i, end=" ")
+#     i += 1
+
+
+
+# 338. Check if a number is even or odd
+# num = int(input("enter a number:"))
+# if num % 2 == 0:
+#     print("even")
+# else:
+#     print("odd")
+
+
+
+# 339. Calculate the sum of elements in a list using a loop
+# numbers = [1, 2, 3, 4, 5]
+# total = 0
+# for n in numbers:
+#     total += n
+# print("Sum of list elements:", total)
+
+
+
+# 340. Multiply all numbers in a list
+# numbers = [2, 3, 4]
+# product = 1
+# for n in numbers:
+#     product *= n
+# print("Product:", product)
+
+
+
+# 341. Reverse a list without using built-in functions
+# numbers = [1, 2, 3, 4, 5]
+# reversed_list = []
+# for i in range(len(numbers)-1, -1, -1):
+#     reversed_list.append(numbers[i])
+# print(reversed_list)
+
+
+
+# 342. Find the largest among three numbers
+# a, b, c = 12, 7, 15
+# largest = a if (a > b and a > c) else (b if b > c else c)
+# print("Largest number:", largest)
+
+
+
+# 343. Remove all whitespace from a string
+# text = "  Hello   World  "
+# cleaned = text.replace(" ", "")
+# print("Without spaces:", cleaned)
+
+
+
+# 344. Convert a decimal number to binary
+# num = 13
+# binary = bin(num)[2:]
+# print("Binary:", binary)
+
+
+
+# 345. Remove duplicates from a list while preserving order
+# items = [1, 2, 2, 3, 4, 4, 5]
+# unique_items = []
+# for i in items:
+#     if i not in unique_items:
+#         unique_items.append(i)
+# print("Without duplicates:", unique_items)
+
+
+
+# 346.Convert a list of tuples into a dictionary
+# pairs = [("a", 1), ("b", 2), ("c", 3)]
+# result = dict(pairs)
+# print("Dictionary:", result)
+
+
+# 347.Find the second smallest number in a list
+# numbers = [10, 3, 5, 7, 2, 8]
+# sorted_nums = sorted(set(numbers))
+# second_smallest = sorted_nums[1]
+# print("Second smallest:", second_smallest)
+
+
+# 348.Flatten a list of lists
+# nested = [[1, 2], [3, 4], [5, 6]]
+# flat = [item for sublist in nested for item in sublist]
+# print("Flattened list:", flat)
+
+
+# 349.Check if a string is a pangram
+# import string
+# text = "The quick brown fox jumps over the lazy dog"
+# alphabet = set(string.ascii_lowercase)
+# if alphabet <= set(text.lower()):
+#     print("Pangram")
+# else:
+#     print("Not a pangram")
+
+
+# 350. Find the intersection of two lists
+# list1 = [1, 2, 3, 4, 5]
+# list2 = [4, 5, 6, 7, 8]
+# intersection = list(set(list1) & set(list2))
+# print("Intersection:", intersection)
+
+
+# 351.Sort a dictionary by its values (descending)
+# data = {"apple": 5, "banana": 2, "cherry": 7}
+# sorted_data = dict(sorted(data.items(), key=lambda x: x[1], reverse=True))
+# print("Sorted dictionary:", sorted_data)
+
+
+
+# 352.Remove all occurrences of a given element from a list
+# nums = [1, 2, 3, 2, 4, 2, 5]
+# element_to_remove = 2
+# filtered = [n for n in nums if n != element_to_remove]
+# print("After removal:", filtered)
+
+
+
+# 353. Generate a list of even numbers between two numbers
+# start, end = 4, 14
+# evens = [n for n in range(start, end+1) if n % 2 == 0]
+# print("Even numbers:", evens)
+
+
+
+# 354.Count the frequency of each character in a string
+# text = "programming"
+# frequency = {}
+# for char in text:
+#     frequency[char] = frequency.get(char, 0) + 1
+# print("Character frequency:", frequency)
+
+
+
+# 355.Get the unique elements from a list while preserving order
+# items = [1, 2, 2, 3, 1, 4, 3]
+# unique_items = []
+# for item in items:
+#     if item not in unique_items:
+#         unique_items.append(item)
+# print("Unique elements:", unique_items)
+
+
+
+# 356.Check if a key exists in a dictionary
+# data = {"name": "Alice", "age": 25}
+# key_to_check = "age"
+# if key_to_check in data:
+#     print(f"Key '{key_to_check}' exists.")
+# else:
+#     print(f"Key '{key_to_check}' does not exist.")
+
+
+
+# 357.Find the factorial of a number using recursion
+# def factorial(n):
+#     if n == 0:
+#         return 1
+#     return n * factorial(n-1)
+
+# print("Factorial of 5:", factorial(5))
+
+
+
+# 358.Remove duplicates from a string
+# text = "programming"
+# result = ""
+# for ch in text:
+#     if ch not in result:
+#         result += ch
+# print(result)
+
+
+
+# 359.Find the sum of digits of a number
+# num = 987
+# sum_digits = sum(int(d) for d in str(num))
+# print("Sum of digits:", sum_digits)
+
+
+
+# 360.Check if a number is prime
+# num = 29
+# if num > 1:
+#     for i in range(2, int(num**0.5) + 1):
+#         if num % i == 0:
+#             print(f"{num} is not prime")
+#             break
+#     else:
+#         print(f"{num} is prime")
+# else:
+#     print(f"{num} is not prime")
+
+
+
+# 361. Find the largest element in a list
+# nums = [10, 25, 7, 98, 3]
+# largest = max(nums)
+# print("Largest number:", largest)
+
+
+
+# 362.Convert a list of tuples into a dictionary
+# pairs = [("a", 1), ("b", 2), ("c", 3)]
+# result = dict(pairs)
+# print("Dictionary:", result)
+
+
+
+# 363.Find the common elements between two lists
+# list1 = [1, 2, 3, 4, 5]
+# list2 = [4, 5, 6, 7]
+# common = [x for x in list1 if x in list2]
+# print("Common elements:", common)
+
+
+
+# 364.Find the length of the longest word in a list
+# words = ["apple", "banana", "cherry", "watermelon"]
+# longest_length = max(len(word) for word in words)
+# print("Longest word length:", longest_length)
+
+
+
+# 365.Flatten a nested list
+# nested = [[1, 2], [3, 4], [5]]
+# flat = [item for sublist in nested for item in sublist]
+# print("Flattened list:", flat)
+
+
+
+# 366.Check if a string is a palindrome ignoring case
+# text = "Racecar"
+# if text.lower() == text.lower()[::-1]:
+#     print("Palindrome")
+# else:
+#     print("Not a palindrome")
+
+
+
+# 367.Find the square of each number in a list using map
+# nums = [1, 2, 3, 4, 5]
+# squares = list(map(lambda x: x**2, nums))
+# print("Squares:", squares)
+
+
+
+# 368.Find the common prefix among a list of strings
+# words = ["interspecies", "interstellar", "interstate"]
+# prefix = ""
+# for chars in zip(*words):
+#     if len(set(chars)) == 1:
+#         prefix += chars[0]
+#     else:
+#         break
+# print("Longest common prefix:", prefix)
+
+
+
+# 369. Find all substrings of a given string
+# text = "abc"
+# substrings = [text[i:j] for i in range(len(text)) for j in range(i+1, len(text)+1)]
+# print("Substrings:", substrings)
+
+
+
+# 370.Convert a list of integers to a single concatenated number
+# nums = [4, 5, 6]
+# result = int("".join(map(str, nums)))
+# print("Concatenated number:", result)
+
+
+
+# 371.Check if a number is an Armstrong number
+# num = 9474
+# power = len(str(num))
+# if sum(int(digit) ** power for digit in str(num)) == num:
+#     print(f"{num} is an Armstrong number")
+# else:
+#     print(f"{num} is not an Armstrong number")
+
+
+
+# 372.Rotate a list by k positions to the right
+# nums = [1, 2, 3, 4, 5]
+# k = 2
+# rotated = nums[-k:] + nums[:-k]
+# print("Rotated list:", rotated)
+
+
+
+# 373.Flatten a nested list
+# nested = [[1, 2], [3, 4], [5]]
+# flat = [item for sublist in nested for item in sublist]
+# print("Flattened list:", flat)
+
+
+
+# 374.Find all even numbers between two given numbers
+# start, end = 4, 15
+# evens = [n for n in range(start, end+1) if n % 2 == 0]
+# print("Even numbers:", evens)
+
+
+
+# 375. Find the second smallest element in a list
+# nums = [12, 5, 7, 3, 9]
+# unique_nums = sorted(set(nums))
+# if len(unique_nums) >= 2:
+#     print("Second smallest:", unique_nums[1])
+# else:
+#     print("List does not have a second smallest element")
+
+
+
+# 376.Find the sum of digits of a number
+# num = 9875
+# digit_sum = sum(int(d) for d in str(num))
+# print("Sum of digits:", digit_sum)
+
+
+
+# 377.Find the frequency of each element in a list
+# nums = [1, 2, 2, 3, 1, 4, 2]
+# frequency = {n: nums.count(n) for n in set(nums)}
+# print("Frequencies:", frequency)
+
+
+
+# 378.Check if all elements in a list are unique
+# nums = [1, 2, 3, 4]
+# if len(nums) == len(set(nums)):
+#     print("All elements are unique")
+# else:
+#     print("Duplicates found")
+
+
+
+# 379.Get the largest and smallest number from a list
+# nums = [4, 7, 1, 9, 12, -3]
+# print("Largest:", max(nums))
+# print("Smallest:", min(nums))
+
+
+
+# 380.Multiply all numbers in a list
+# nums = [2, 3, 4]
+# result = 1
+# for n in nums:
+#     result *= n
+# print("Product of list elements:", result)
+
+
+
+# 381.Remove duplicate characters from a string
+# text = "programming"
+# result = "".join(sorted(set(text), key=text.index))
+# print("Without duplicates:", result)
+
+
+
+# 382.Flatten a nested list
+# nested = [[1, 2], [3, 4], [5, 6]]
+# flat = [item for sublist in nested for item in sublist]
+# print("Flattened list:", flat)
+
+
+
+# 383.Replace all spaces in a string with underscores
+# text = "Hello World from Python"
+# modified = text.replace(" ", "_")
+# print("Modified string:", modified)
+
+
+
+# 384.Count frequency of each element in a list
+# nums = [1, 2, 2, 3, 3, 3]
+# freq = {n: nums.count(n) for n in set(nums)}
+# print("Frequencies:", freq)
+
+
+
+# 385.Remove all punctuation from a string
+# import string
+
+# text = "Hello!!! Are you there?"
+# cleaned = "".join(ch for ch in text if ch not in string.punctuation)
+# print("Without punctuation:", cleaned)
+
+
+
+# 386.Count the number of uppercase letters in a string
+# text = "Hello World!"
+# uppercase_count = sum(1 for ch in text if ch.isupper())
+# print("Uppercase letters:", uppercase_count)
+
+
+
+# 387.Find numbers divisible by 7 in a range
+# divisible_by_7 = [n for n in range(1, 51) if n % 7 == 0]
+# print("Numbers divisible by 7:", divisible_by_7)
+
+
+
+# 388.Remove all occurrences of a specific element from a list
+# nums = [1, 2, 3, 2, 4, 2, 5]
+# element_to_remove = 2
+# result = [n for n in nums if n != element_to_remove]
+# print("List after removal:", result)
+
+
+
+# 389. Convert a list of tuples into a dictionary
+# pairs = [("a", 1), ("b", 2), ("c", 3)]
+# result = dict(pairs)
+# print("Dictionary:", result)
+
+
+
+# 390.Find the maximum key in a dictionary
+# data = {5: "apple", 8: "banana", 2: "cherry"}
+# max_key = max(data)
+# print("Maximum key:", max_key)
+
+
+
+# 391.Remove all None values from a list
+# data = [1, None, 2, None, 3, 4, None]
+# filtered = [x for x in data if x is not None]
+# print("List without None:", filtered)
+
+
+
+# 392.Find the largest element in a list
+# nums = [10, 20, 30, 5]
+# print(max(nums))
+
+
+
+# 393.Remove duplicates from a list while preserving order
+# nums = [1,2,2,3,4,3]
+# unique = []
+# for n in nums:
+#     if n not in unique:
+#         unique.append(n)
+# print(unique)
+
+
+
+# 394.Count occurrences of each element in a list
+# nums = [1, 2, 2, 3, 3, 3]
+# count_dict = {}
+# for n in nums:
+#     count_dict[n] = count_dict.get(n, 0) + 1
+# print(count_dict)
+
+
+
+# 395.Convert a string to title case
+# text = "python programming language"
+# print(text.title())
+
+
+
+# 396.Reverse the words in a sentence
+# sentence = "Python is fun"
+# reversed_sentence = " ".join(sentence.split()[::-1])
+# print(reversed_sentence)
+
+
+
+# 397.Get the ASCII value of a character
+# char = 'A'
+# print(ord(char))
+
+
+
+# 398.Calculate the sum of digits of a number
+# num = 1234
+# digit_sum = sum(int(d) for d in str(num))
+# print(digit_sum)
+
+
+
+# 399.Flatten a nested list
+# nested = [[1, 2], [3, 4], [5]]
+# flat = [item for sublist in nested for item in sublist]
+# print(flat)
+
+
+
+# 400.Find all even numbers in a list
+# nums = [1, 2, 3, 4, 5, 6]
+# evens = [n for n in nums if n % 2 == 0]
+# print(evens)
+
+
+
+# 401.Convert a string to a list of characters
+# text = "hello"
+# chars = list(text)
+# print(chars)
+
+
+
+# 402.Write a Python program to display all prime numbers within a range.
+# start = int(input("Enter start: "))
+# end = int(input("Enter end: "))
+
+# for num in range(start, end+1):
+#     if num > 1:
+#         for i in range(2, int(num**0.5)+1):
+#             if num % i == 0:
+#                 break
+#         else:
+#             print(num, end=" ")
+
+
+
+# 403.Write a Python program to remove duplicates from a list while preserving order.
+# items = [1, 2, 2, 3, 4, 4, 5]
+# unique_items = []
+# for item in items:
+#     if item not in unique_items:
+#         unique_items.append(item)
+
+# print("Unique List:", unique_items)
+
+
+
+# 404.Write a Python program to find the second smallest number in a list.
+# numbers = [5, 1, 8, 3, 2]
+# numbers.sort()
+# second_smallest = numbers[1]
+# print("Second smallest number:", second_smallest)
+
+
+
+# 405.Write a Python program to create a dictionary from two lists.
+# keys = ['name', 'age', 'city']
+# values = ['John', 25, 'New York']
+
+# my_dict = dict(zip(keys, values))
+# print(my_dict)
+
+
+
+# 406. Write a Python program to print all even numbers from 1 to 20.
+# for i in range(1, 21):
+#     if i % 2 == 0:
+#         print(i, end=" ")
+
+
+
+# 407.Write a Python program to check whether a number is prime.
+# num = 13
+# if num > 1:
+#     for i in range(2, int(num**0.5) + 1):
+#         if num % i == 0:
+#             print("Not Prime")
+#             break
+#     else:
+#         print("Prime")
+# else:
+#     print("Not Prime")
+
+
+
+# 408. Write a Python program to find the factorial of a number.
+# num = 5
+# fact = 1
+# for i in range(1, num+1):
+#     fact *= i
+#     print("Factorial:", fact)
+
+
+
+# 409. Write a Python program to reverse a string without using slicing.
+# text = "Python"
+# reversed_text = "".join(reversed(text))
+# print(reversed_text)
+
+
+
+# 410.Write a Python program to count the number of digits in a number.
+# num = 987654
+# count = len(str(num))
+# print("Digits:", count)
+
+
+
+# 411.Write a Python program to check if a string starts and ends with the same character.
+# text = input("enter a text:")
+# if text[0] == text[-1]:
+#     print("yes")
+# else:
+#     print("no")    
+
+
+
+# 412.Write a Python program to find the largest of three numbers without using max().
+# a, b, c = 10, 25, 15
+# if a >= b and a >= c:
+#     largest = a
+# elif b >= a and b >= c:
+#     largest = b
+# else:
+#     largest = c
+# print("Largest:", largest)
+
+
+
+# 413.Write a Python program to find the second smallest number in a list.
+# nums = [12, 5, 8, 3, 15]
+# nums_sorted = sorted(nums)
+# second_smallest = nums_sorted[1]
+# print(second_smallest)
+
+
+
+# 414. Write a Python program to multiply all items in a list.
+# nums = [2, 3, 4]
+# product = 1
+
+# for num in nums:
+#     product *= num
+
+# print(product)
+
+
+
+# 415.Write a Python program to get unique values from a list.
+# my_list = [1, 2, 2, 3, 4, 4, 5]
+# unique_list = list(set(my_list))
+# print("Unique values:", unique_list)
+
+
+
+# 416. Write a Python program to print even numbers from 1 to 20.
+# for i in range(1, 21):
+#     if i % 2 == 0:
+#         print(i, end=" ")
+
+
+
+# 417.Write a Python program to find the sum of digits of a number.
+# num = int(input("Enter a number: "))
+# digit_sum = sum(int(d) for d in str(num))
+# print(digit_sum)
+
+
+
+# 418.Write a Python program to get the smallest number from a list.
+numbers = [5, 10, 3, 8, 2, 7]
+smallest = min(numbers)
+print("Smallest number:", smallest)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+
+
+
+
+
+
+
+
 
 
 
