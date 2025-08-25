@@ -4188,34 +4188,536 @@
 #  Q680. Sort dict {'b':2,'a':3,'c':1} by value ascending (list of tuples)
 # d={'b':2,'a':3,'c':1}
 # sorted_items = sorted(d.items(), key=lambda x: x[1])
-# print(sorted_items)   
+# print(sorted_items) 
 
 
 
+# Q681. Get value for key 'k2' in d={'k1': 5, 'k2': 6, 'k3': 7, 'k4': 8, 'k5': 9, 'k6': 10} with default 0.
+# d={'k1': 5, 'k2': 6, 'k3': 7, 'k4': 8, 'k5': 9, 'k6': 10}
+# print(d.get('k2', 0))
 
 
+# Q682. Update key 'k1' to 99 in d={'k1': 5, 'k2': 6, 'k3': 7, 'k4': 8, 'k5': 9, 'k6': 10}.
+# d={'k1': 5, 'k2': 6, 'k3': 7, 'k4': 8, 'k5': 9, 'k6': 10}
+# d['k1'] = 99
+# print(d)
 
 
+#  Q683. Merge dicts d={'k1': 5, 'k2': 6, 'k3': 7, 'k4': 8, 'k5': 9, 'k6': 10} and e={'k1': 7, 'k2': 8, 'k3': 9} (Python 3.9+).
+# d={'k1': 5, 'k2': 6, 'k3': 7, 'k4': 8, 'k5': 9, 'k6': 10} 
+# e={'k1': 7, 'k2': 8, 'k3': 9}
+# merged = d|e
+# print(merged)
 
 
+#  Q684. Keys of d={'k1': 5, 'k2': 6, 'k3': 7, 'k4': 8, 'k5': 9, 'k6': 10}.
+# d={'k1': 5, 'k2': 6, 'k3': 7, 'k4': 8, 'k5': 9, 'k6': 10}
+# print(d.keys())
 
 
+# Q685. Values of d={'k1': 5, 'k2': 6, 'k3': 7, 'k4': 8, 'k5': 9, 'k6': 10}.
+# d={'k1': 5, 'k2': 6, 'k3': 7, 'k4': 8, 'k5': 9, 'k6': 10}
+# print(d.values())
 
 
+# Q686. Items of d={'k1': 5, 'k2': 6, 'k3': 7, 'k4': 8, 'k5': 9, 'k6': 10}.
+# d={'k1': 5, 'k2': 6, 'k3': 7, 'k4': 8, 'k5': 9, 'k6': 10}
+# print(d.items())
 
 
+# Q687. Invert dict {'a':1,'b':2} (values unique).
+# d = {'a':1,'b':2}
+# inverted = {}
+# for k, v in d.items():
+#     inverted[v] = k
+# print(inverted)
 
 
+# Q688. Count frequency of elements in list [1,2,1,3,2,1] using dict.
+# lst = [1,2,1,3,2,1]
+# frequency = {}
+# for i in lst:
+#     frequency[i] = frequency.get(i,0) + 1
+# print(frequency) 
 
 
+# Q689. Max key by value in d={'a':3,'b':7,'c':5}.
+# d={'a':3,'b':7,'c':5}
+# max_key = max(d, key=d.get)
+# print(max_key)
 
 
+#  Q690. Sort dict {'b':2,'a':3,'c':1} by value ascending (list of tuples).
+# d = {'b':2,'a':3,'c':1}
+# sort_item = sorted(d.items(), key=lambda x: x[1])
+# print(sort_item)
 
 
+# Q691. Get value for key 'k2' in d={'k1': 6, 'k2': 7} with default 0.
+# d={'k1': 6, 'k2': 7}
+# print(d.get('k2',0))
 
 
+# Q692. Update key 'k1' to 99 in d={'k1': 6, 'k2': 7}.
+# d={'k1': 6, 'k2': 7}
+# d['k1']=99
+# print(d)
 
 
+# Q693. Merge dicts d={'k1': 6, 'k2': 7} and e={'k1': 8, 'k2': 9, 'k3': 10, 'k4': 11} (Python 3.9+).
+# d={'k1': 6, 'k2': 7}
+# e={'k1': 8, 'k2': 9, 'k3': 10, 'k4': 11}
+# merged=d|e
+# print(merged)
+
+
+# Q694. Keys of d={'k1': 6, 'k2': 7}.
+# d={'k1': 6, 'k2': 7}
+# print(d.keys())
+
+
+# Q695. Values of d={'k1': 6, 'k2': 7}.
+# d={'k1': 6, 'k2': 7}
+# print(d.values())
+
+
+# Q696. Items of d={'k1': 6, 'k2': 7}.
+# d={'k1': 6, 'k2': 7}
+# print(d.items())
+
+
+# Q697. Invert dict {'a':1,'b':2} (values unique).
+# d={'a':1,'b':2}
+# inverted={v:k for k,v in d.items()}
+# print(inverted)
+
+
+# Q698. Count frequency of elements in list [1,2,1,3,2,1] using dict.
+# lst=[1,2,1,3,2,1]
+# freq={}
+# for i in lst:
+#     freq[i]=freq.get(i,0)+1
+# print(freq)
+
+
+# Q699. Max key by value in d={'a':3,'b':7,'c':5}.
+# d={'a':3,'b':7,'c':5}
+# max_key=max(d,key=d.get)
+# print(max_key)
+
+
+# Q700. Sort dict {'b':2,'a':3,'c':1} by value ascending (list of tuples).
+# d={'b':2,'a':3,'c':1}
+# sorted_items=sorted(d.items(),key=lambda x:x[1])
+# print(sorted_items)
+
+
+# Q701. Get value for key 'k2' in d={'k1': 7, 'k2': 8, 'k3': 9} with default 0.
+# d={'k1': 7, 'k2': 8, 'k3': 9}
+# print(d.get('k2',0))
+
+
+# Q702. Update key 'k1' to 99 in d={'k1': 7, 'k2': 8, 'k3': 9}.
+# d={'k1': 7, 'k2': 8, 'k3': 9}
+# d['k1']=99
+# print(d)
+
+
+# Q703. Merge dicts d={'k1': 7, 'k2': 8, 'k3': 9} and e={'k1': 9, 'k2': 10, 'k3': 11, 'k4': 12, 'k5': 13} (Python 3.9+).
+# d={'k1': 7, 'k2': 8, 'k3': 9}
+# e={'k1': 9, 'k2': 10, 'k3': 11, 'k4': 12, 'k5': 13}
+# merged=d|e
+# print(merged)
+
+
+# Q704. Keys of d={'k1': 7, 'k2': 8, 'k3': 9}.
+# d={'k1': 7, 'k2': 8, 'k3': 9}
+# print(d.keys())
+
+
+# Q705. Values of d={'k1': 7, 'k2': 8, 'k3': 9}.
+# d={'k1': 7, 'k2': 8, 'k3': 9}
+# print(d.values())
+
+
+# Q706. Items of d={'k1': 7, 'k2': 8, 'k3': 9}.
+# d={'k1': 7, 'k2': 8, 'k3': 9}
+# print(d.items())
+
+
+# Q707. Invert dict {'a':1,'b':2} (values unique).
+# d={'a':1,'b':2}
+# inverted={v:k for k,v in d.items()}
+# print(inverted)
+
+
+# Q708. Count frequency of elements in list [1,2,1,3,2,1] using dict.
+# lst=[1,2,1,3,2,1]
+# freq={}
+# for i in lst:
+#     freq[i]=freq.get(i,0)+1
+# print(freq)
+
+
+# Q709. Max key by value in d={'a':3,'b':7,'c':5}.
+# d={'a':3,'b':7,'c':5}
+# max_key=max(d,key=d.get)
+# print(max_key)
+
+
+# Q710. Sort dict {'b':2,'a':3,'c':1} by value ascending (list of tuples).
+# d={'b':2,'a':3,'c':1}
+# sorted_items=sorted(d.items(),key=lambda x:x[1])
+# print(sorted_items)
+
+
+# Q711. Get value for key 'k2' in d={'k1': 8, 'k2': 9, 'k3': 10, 'k4': 11} with default 0.
+# d={'k1': 8, 'k2': 9, 'k3': 10, 'k4': 11}
+# print(d.get('k2',0))
+
+
+# Q712. Update key 'k1' to 99 in d={'k1': 8, 'k2': 9, 'k3': 10, 'k4': 11}.
+# d={'k1': 8, 'k2': 9, 'k3': 10, 'k4': 11}
+# d['k1']=99
+# print(d)
+
+
+# Q713. Merge dicts d={'k1': 8, 'k2': 9, 'k3': 10, 'k4': 11} and e={'k1': 10, 'k2': 11, 'k3': 12, 'k4': 13, 'k5': 14, 'k6': 15} (Python 3.9+).
+# d={'k1': 8, 'k2': 9, 'k3': 10, 'k4': 11}
+# e={'k1': 10, 'k2': 11, 'k3': 12, 'k4': 13, 'k5': 14, 'k6': 15}
+# merged=d|e
+# print(merged)
+
+
+# Q714. Keys of d={'k1': 8, 'k2': 9, 'k3': 10, 'k4': 11}.
+# d={'k1': 8, 'k2': 9, 'k3': 10, 'k4': 11}
+# print(d.keys())
+
+
+# Q715. Values of d={'k1': 8, 'k2': 9, 'k3': 10, 'k4': 11}.
+# d={'k1': 8, 'k2': 9, 'k3': 10, 'k4': 11}
+# print(d.values())
+
+
+# Q716. Items of d={'k1': 8, 'k2': 9, 'k3': 10, 'k4': 11}.
+# d={'k1': 8, 'k2': 9, 'k3': 10, 'k4': 11}
+# print(d.items())
+
+
+# Q717. Invert dict {'a':1,'b':2} (values unique).
+# d={'a':1,'b':2}
+# inverted={v:k for k,v in d.items()}
+# print(inverted)
+
+
+# Q718. Count frequency of elements in list [1,2,1,3,2,1] using dict.
+# lst=[1,2,1,3,2,1]
+# freq={}
+# for i in lst:
+#     freq[i]=freq.get(i,0)+1
+# print(freq)
+
+
+# Q719. Max key by value in d={'a':3,'b':7,'c':5}.
+# d={'a':3,'b':7,'c':5}
+# max_key=max(d,key=d.get)
+# print(max_key)
+
+
+# Q720. Sort dict {'b':2,'a':3,'c':1} by value ascending (list of tuples).
+# d={'b':2,'a':3,'c':1}
+# sorted_items=sorted(d.items(),key=lambda x:x[1])
+# print(sorted_items)
+
+
+# Q721. Get value for key 'k2' in d={'k1': 9, 'k2': 10, 'k3': 11, 'k4': 12, 'k5': 13} with default 0.
+# d={'k1': 9, 'k2': 10, 'k3': 11, 'k4': 12, 'k5': 13}
+# print(d.get('k2',0))
+
+
+# Q722. Update key 'k1' to 99 in d={'k1': 9, 'k2': 10, 'k3': 11, 'k4': 12, 'k5': 13}.
+# d={'k1': 9, 'k2': 10, 'k3': 11, 'k4': 12, 'k5': 13}
+# d['k1']=99
+# print(d)
+
+
+# Q723. Merge dicts d={'k1': 9, 'k2': 10, 'k3': 11, 'k4': 12, 'k5': 13} and e={'k1': 11, 'k2': 12} (Python 3.9+).
+# d={'k1': 9, 'k2': 10, 'k3': 11, 'k4': 12, 'k5': 13}
+# e={'k1': 11, 'k2': 12}
+# merged=d|e
+# print(merged)
+
+
+# Q724. Keys of d={'k1': 9, 'k2': 10, 'k3': 11, 'k4': 12, 'k5': 13}.
+# d={'k1': 9, 'k2': 10, 'k3': 11, 'k4': 12, 'k5': 13}
+# print(d.keys())
+
+
+# Q725. Values of d={'k1': 9, 'k2': 10, 'k3': 11, 'k4': 12, 'k5': 13}.
+# d={'k1': 9, 'k2': 10, 'k3': 11, 'k4': 12, 'k5': 13}
+# print(d.values())
+
+
+# Q726. Items of d={'k1': 9, 'k2': 10, 'k3': 11, 'k4': 12, 'k5': 13}.
+# d={'k1': 9, 'k2': 10, 'k3': 11, 'k4': 12, 'k5': 13}
+# print(d.items())
+
+
+# Q727. Invert dict {'a':1,'b':2} (values unique).
+# d={'a':1,'b':2}
+# inverted={v:k for k,v in d.items()}
+# print(inverted)
+
+
+# Q728. Count frequency of elements in list [1,2,1,3,2,1] using dict.
+# lst=[1,2,1,3,2,1]
+# freq={}
+# for i in lst:
+#     freq[i]=freq.get(i,0)+1
+# print(freq)
+
+
+# Q729. Max key by value in d={'a':3,'b':7,'c':5}.
+# d={'a':3,'b':7,'c':5}
+# max_key=max(d,key=d.get)
+# print(max_key)
+
+
+# Q730. Sort dict {'b':2,'a':3,'c':1} by value ascending (list of tuples).
+# d={'b':2,'a':3,'c':1}
+# sorted_items=sorted(d.items(),key=lambda x:x[1])
+# print(sorted_items)
+
+
+# Q731. Get value for key 'k2' in d={'k1': 10, 'k2': 11, 'k3': 12, 'k4': 13, 'k5': 14, 'k6': 15} with default 0.
+# d={'k1': 10, 'k2': 11, 'k3': 12, 'k4': 13, 'k5': 14, 'k6': 15}
+# print(d.get('k2',0))
+
+
+# Q732. Update key 'k1' to 99 in d={'k1': 10, 'k2': 11, 'k3': 12, 'k4': 13, 'k5': 14, 'k6': 15}.
+# d={'k1': 10, 'k2': 11, 'k3': 12, 'k4': 13, 'k5': 14, 'k6': 15}
+# d['k1']=99
+# print(d)
+
+
+# Q733. Merge dicts d={'k1': 10, 'k2': 11, 'k3': 12, 'k4': 13, 'k5': 14, 'k6': 15} and e={'k1': 12, 'k2': 13, 'k3': 14} (Python 3.9+).
+# d={'k1': 10, 'k2': 11, 'k3': 12, 'k4': 13, 'k5': 14, 'k6': 15}
+# e={'k1': 12, 'k2': 13, 'k3': 14}
+# merged=d|e
+# print(merged)
+
+
+# Q734. Keys of d={'k1': 10, 'k2': 11, 'k3': 12, 'k4': 13, 'k5': 14, 'k6': 15}.
+# d={'k1': 10, 'k2': 11, 'k3': 12, 'k4': 13, 'k5': 14, 'k6': 15}
+# print(d.keys())
+
+
+# Q735. Values of d={'k1': 10, 'k2': 11, 'k3': 12, 'k4': 13, 'k5': 14, 'k6': 15}.
+# d={'k1': 10, 'k2': 11, 'k3': 12, 'k4': 13, 'k5': 14, 'k6': 15}
+# print(d.values())
+
+
+# Q736. Items of d={'k1': 10, 'k2': 11, 'k3': 12, 'k4': 13, 'k5': 14, 'k6': 15}.
+# d={'k1': 10, 'k2': 11, 'k3': 12, 'k4': 13, 'k5': 14, 'k6': 15}
+# print(d.items())
+
+
+# Q737. Invert dict {'a':1,'b':2} (values unique).
+# d={'a':1,'b':2}
+# inverted={v:k for k,v in d.items()}
+# print(inverted)
+
+
+# Q738. Count frequency of elements in list [1,2,1,3,2,1] using dict.
+# lst=[1,2,1,3,2,1]
+# freq={}
+# for i in lst:
+#     freq[i]=freq.get(i,0)+1
+# print(freq)
+
+
+# Q739. Max key by value in d={'a':3,'b':7,'c':5}.
+# d={'a':3,'b':7,'c':5}
+# max_key=max(d,key=d.get)
+# print(max_key)
+
+
+# Q740. Sort dict {'b':2,'a':3,'c':1} by value ascending (list of tuples).
+# d={'b':2,'a':3,'c':1}
+# sorted_items=sorted(d.items(),key=lambda x:x[1])
+# print(sorted_items)
+
+
+# Q741. Get value for key 'k2' in d={'k1': 11, 'k2': 12} with default 0.
+# d={'k1': 11, 'k2': 12}
+# print(d.get('k2',0))
+
+
+# Q742. Update key 'k1' to 99 in d={'k1': 11, 'k2': 12}.
+# d={'k1': 11, 'k2': 12}
+# d['k1']=99
+# print(d)
+
+
+# Q743. Merge dicts d={'k1': 11, 'k2': 12} and e={'k1': 13, 'k2': 14, 'k3': 15, 'k4': 16} (Python 3.9+).
+# d={'k1': 11, 'k2': 12}
+# e={'k1': 13, 'k2': 14, 'k3': 15, 'k4': 16}
+# merged=d|e
+# print(merged)
+
+
+# Q744. Keys of d={'k1': 11, 'k2': 12}.
+# d={'k1': 11, 'k2': 12}
+# print(d.keys())
+
+
+# Q745. Values of d={'k1': 11, 'k2': 12}.
+# d={'k1': 11, 'k2': 12}
+# print(d.values())
+
+
+# Q746. Items of d={'k1': 11, 'k2': 12}.
+# d={'k1': 11, 'k2': 12}
+# print(d.items())
+
+
+# Q747. Invert dict {'a':1,'b':2} (values unique).
+# d={'a':1,'b':2}
+# inverted={v:k for k,v in d.items()}
+# print(inverted)
+
+
+# Q748. Count frequency of elements in list [1,2,1,3,2,1] using dict.
+# lst=[1,2,1,3,2,1]
+# freq={}
+# for i in lst:
+#     freq[i]=freq.get(i,0)+1
+# print(freq)
+
+
+# Q749. Max key by value in d={'a':3,'b':7,'c':5}.
+# d={'a':3,'b':7,'c':5}
+# max_key=max(d,key=d.get)
+# print(max_key)
+
+
+# Q750. Sort dict {'b':2,'a':3,'c':1} by value ascending (list of tuples).
+# d={'b':2,'a':3,'c':1}
+# sorted_items=sorted(d.items(),key=lambda x:x[1])
+# print(sorted_items)
+
+
+#  Q751. Get value for key 'k2' in d={'k1': 12, 'k2': 13, 'k3': 14} with default 0.
+# d={'k1': 12, 'k2': 13, 'k3': 14}
+# print(d.get('k2', 0))
+
+
+#  Q752. Update key 'k1' to 99 in d={'k1': 12, 'k2': 13, 'k3': 14}.
+# d={'k1': 12, 'k2': 13, 'k3': 14}
+# d['k1'] = 99
+# print(d)
+
+
+#  Q753. Merge dicts d={'k1': 12, 'k2': 13, 'k3': 14} and e={'k1': 14, 'k2': 15, 'k3': 16, 'k4': 17, 'k5': 18} (Python 3.9+).
+# d={'k1': 12, 'k2': 13, 'k3': 14}
+# e={'k1': 14, 'k2': 15, 'k3': 16, 'k4': 17, 'k5': 18}
+# print(d|e)
+
+
+# Q754. Keys of d={'k1': 12, 'k2': 13, 'k3': 14}.
+# d={'k1': 12, 'k2': 13, 'k3': 14}
+# print(d.keys())
+
+
+#  Q755. Values of d={'k1': 12, 'k2': 13, 'k3': 14}.
+# d={'k1': 12, 'k2': 13, 'k3': 14}
+# print(d.values())
+
+
+# Q756. Items of d={'k1': 12, 'k2': 13, 'k3': 14}.
+# d={'k1': 12, 'k2': 13, 'k3': 14}
+# print(d.items())
+
+
+#  Q757. Invert dict {'a':1,'b':2} (values unique).
+# d = {'a':1,'b':2}
+# invert = {v:k for k,v in d.items()} 
+# print(invert)  
+
+
+#  Q758. Count frequency of elements in list [1,2,1,3,2,1] using dict.
+# lst = [1,2,1,3,2,1]
+# freq = {}
+# for i in lst:
+#     freq[i] = freq.get(i, 0)+1
+# print(freq)      
+
+
+# Q759. Max key by value in d={'a':3,'b':7,'c':5}.
+# d={'a':3,'b':7,'c':5}
+# print(max(d,key=d.get))
+
+
+#  Q760. Sort dict {'b':2,'a':3,'c':1} by value ascending (list of tuples).
+# d = {'b':2,'a':3,'c':1}
+# print(sorted(d.items(), key=lambda i:i[1]))
+
+
+#  Q761. Get value for key 'k2' in d={'k1': 13, 'k2': 14, 'k3': 15, 'k4': 16} with default 0.
+# d={'k1': 13, 'k2': 14, 'k3': 15, 'k4': 16}
+# print(d.get('k2', 0))
+
+
+# Q762. Update key 'k1' to 99 in d={'k1': 13, 'k2': 14, 'k3': 15, 'k4': 16}.
+# d={'k1': 13, 'k2': 14, 'k3': 15, 'k4': 16}
+# d['k1'] = 99
+# print(d)
+
+
+#  Q763. Merge dicts d={'k1': 13, 'k2': 14, 'k3': 15, 'k4': 16} and e={'k1': 15, 'k2': 16, 'k3': 17, 'k4': 18, 'k5': 19, 'k6': 20} (Python 3.9+).
+# d={'k1': 13, 'k2': 14, 'k3': 15, 'k4': 16}
+# e={'k1': 15, 'k2': 16, 'k3': 17, 'k4': 18, 'k5': 19, 'k6': 20} 
+# merged = d|e
+# print(merged)
+
+
+#  Q764. Keys of d={'k1': 13, 'k2': 14, 'k3': 15, 'k4': 16}.
+# d={'k1': 13, 'k2': 14, 'k3': 15, 'k4': 16}
+# print(d.keys())
+
+
+#  Q765. Values of d={'k1': 13, 'k2': 14, 'k3': 15, 'k4': 16}.
+# d={'k1': 13, 'k2': 14, 'k3': 15, 'k4': 16}
+# print(d.values())
+
+
+#  Q766. Items of d={'k1': 13, 'k2': 14, 'k3': 15, 'k4': 16}.
+# d={'k1': 13, 'k2': 14, 'k3': 15, 'k4': 16}
+# print(d.items())
+
+
+# Q767. Invert dict {'a':1,'b':2} (values unique).
+# d = {'a':1,'b':2}
+# invert = {v:k for k,v in d.items()}
+# print(invert)
+
+
+# Q768. Count frequency of elements in list [1,2,1,3,2,1] using dict.
+# lst = [1,2,1,3,2,1]
+# freq = {}
+# for i in lst:
+#     freq[i] = freq.get(i, 0)
+# print(freq)
+
+
+# Q769. Max key by value in d={'a':3,'b':7,'c':5}.
+# d={'a':3,'b':7,'c':5}
+# print(max(d,key=d.get))
+
+
+# Q770. Sort dict {'b':2,'a':3,'c':1} by value ascending (list of tuples).
+# d={'b':2,'a':3,'c':1}
+# print(sorted(d.items(), key=lambda x:x[1]))
 
 
 
