@@ -277,9 +277,9 @@
 
 
 # dictionary = {
-#     "apple": "सेब",
-#     "water": "पानी",
-#     "book": "किताब"
+#     "apple": "saib",
+#     "water": "pani",
+#     "book": "kitab"
 # }
 # word = input("Enter an English word: ")
 # if word in dictionary:
